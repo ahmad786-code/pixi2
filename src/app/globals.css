@@ -33,10 +33,9 @@ body {
   background-image: url(../../public/waves.png);
   background-color: var(--dark-pink-body);
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed; 
-overflow-x: hidden;
- 
+
+  overflow-x: hidden;
+
 }
 
 @layer utilities {
@@ -61,31 +60,32 @@ ul {
 .header {
   padding: 1rem 3rem;
   height: 90vh;
-  
+
   position: relative;
   overflow: hidden;
 }
 
 .navbar {
   display: flex;
-  padding: 2rem 3rem;
+  padding: 2rem 6rem;
   justify-content: space-between;
   align-items: center;
 }
 
- 
+
 .logo-img {
   width: auto;
   height: 50px;
-   
+
 }
 
 .links {
   display: flex;
   gap: 1rem;
-  
-  
+
+
 }
+
 .contact-btn {
   padding: .7rem 2rem;
   background-color: var(--white-color);
@@ -97,6 +97,7 @@ ul {
   text-align: center;
   cursor: pointer;
 }
+
 .social-btn {
   padding: .7rem 2rem;
   background-color: var(--white-color);
@@ -111,7 +112,7 @@ ul {
 
 .text-box {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -128,21 +129,23 @@ ul {
   padding-bottom: 2rem;
 }
 
- 
+
 
 /* Contact Section */
 
 .contact-section {
   padding: 7rem 3rem;
- text-align: center;
- 
+  text-align: center;
+
 
 }
 
 .contact-heading {
   text-align: center;
-  color: white; /* Change color as needed */
-  font-size: 1.5rem; /* Adjust size as needed */
+  color: white;
+  /* Change color as needed */
+  font-size: 1.5rem;
+  /* Adjust size as needed */
   overflow: hidden;
 }
 
@@ -166,20 +169,21 @@ ul {
 }
 
 input {
- max-width: 280px;
- width: 280px;
+  max-width: 280px;
+  width: 280px;
   background-color: transparent;
   outline: none;
   border: none;
   color: #ffffff;
-  border-bottom: 1px solid  #ccc;
- padding: 2rem 0rem;
- transition: all .5s;
+  border-bottom: 1px solid #ccc;
+  padding: 2rem 0rem;
+  transition: all .5s;
 }
 
 input:focus {
-  border-bottom: 1px solid  #fff;
+  border-bottom: 1px solid #fff;
 }
+
 input[type="button"] {
   width: inherit;
   margin-top: 3rem;
@@ -198,7 +202,7 @@ input[type="button"] {
 
 input::placeholder {
   color: #ffffff;
- font-size: 1.1rem;
+  font-size: 1.1rem;
 
 }
 
@@ -214,63 +218,153 @@ input::placeholder {
   font-weight: bold;
 }
 
+
+/* BG */
+.header-right-follower {
+  right: -9rem;
+}
+
+.header-left-follower {
+  top: 10rem;
+}
+
+.acordion-right-follower {
+  right: -9rem;
+  top: -5rem;
+
+}
+
+.acordion-left-follower {
+  width: 10%;
+}
+
+.contact-right-follower {
+  right: -9rem;
+  top: -5rem;
+
+}
+
+.contact-left-follower {
+  width: 10%;
+  bottom: 1rem;
+}
+
+.footer-left-follower {
+  width: 10%;
+  left: 28rem;
+  top: 0;
+
+}
+
+.footer-right-follower {
+  right: -9rem;
+  top: -5rem;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding-left: 3rem !important /* 192px */;
+    padding-right: 3rem !important /* 192px */;
+  }
+  .header-right-follower {
+    right: -2rem;
+  }
+
+  .header-left-follower {
+    top: 26rem;
+  }
+
+  .acordion-right-follower {
+    right: 0;
+    top: 5rem;
+
+  }
+
+  .contact-right-follower {
+    right: 0;
+    top: 5rem;
+
+  }
+
+
+  .footer-left-follower {
+    width: 10%;
+    left: 0;
+    top: 12rem;
+
+  }
+
+  .footer-right-follower {
+    right: 0rem;
+    top: 0rem;
+  }
+
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
 
- 
-.toggle-btn {
-  display: block;
-}
- .heading {
-  font-size: 2.5rem;
- }
 
- .contact-heading {
-  font-size: 2rem;
- }
+  .toggle-btn {
+    display: block;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+  }
 
   .input-group {
-     
-      display: flex;
-      flex-direction: row;
-      
+
+    display: flex;
+    flex-direction: row;
+
   }
+
   input {
-      width: 300px;
-      max-width:300px;
+    width: 300px;
+    max-width: 300px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .toggle-btn {
-      display: none;
+    display: none;
   }
+
   aside {
-      display: none;
+    display: none;
   }
+
   .heading {
-      font-size: 3.5rem;
-     }
-     .contact-heading {
-      font-size: 2.5rem;
-     }
-  .input-group {
-     
-      display: flex;
-      flex-direction: row;
-      
+    font-size: 3.5rem;
   }
+
+  .contact-heading {
+    font-size: 2.5rem;
+  }
+
+  .input-group {
+
+    display: flex;
+    flex-direction: row;
+
+  }
+
   input {
-      width: 600px;
-      max-width:600px;
+    width: 600px;
+    max-width: 600px;
   }
 }
- 
- 
 
- 
- 
+
+
+
+
 /* ::-webkit-scrollbar {
  display: none;
 }
