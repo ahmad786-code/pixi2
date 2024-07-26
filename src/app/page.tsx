@@ -21,37 +21,43 @@ export default function Home() {
         </nav>
 
         <div className="text-box">
-          <h1 className="heading">
-
-            <span className="heading-1">Pixie MGMT</span>
-            <span className="block uppercase mt-6 text-xl text-wrap px-4">PIXIE is a top-tier management agency that elevates digital content creators to their highest potential. We provide tailored strategies and expert support to enhance visibility, engagement, and earnings. At PIXIE, we turn creativity into exceptional success in the digital space.</span>
-          </h1>
-          <a href="#contact-section" className="social-btn">Contact Us</a>
-          <img src="../../flow3.png" alt="rose" className="absolute h-auto w-3/12 object-cover -z-10 header-left-follower" />
+        <h1 className="text-6xl text-white">Pixie MGMT</h1>
+     
+          {/* <a href="#contact-section" className="social-btn">Contact Us</a> */}
+          
 
         </div>
-        <img src="../../flow1.png" alt="rose" className="absolute h-auto w-2/12 object-cover -z-10 header-right-follower" />
+        <div className=" mt-48  flex  flex-col items-center justify-center">
+            <span className="text-white mb-12 text-6xl">01</span>
+            <h1 className="text-white my-4 text-3xl text-center">Top-tier management agency elevating digital content creators</h1>
+            <span className="text-white  my-12 text-6xl">02</span>
+            <h1 className="text-white my-4 text-3xl text-center">Tailored strategies and expert support to enhance visibility, engagement, and earnings</h1>
+            <span className="text-white  my-12 text-6xl ">03</span>
+            <h1 className="text-white my-4 text-3xl text-center">Transforming creativity into exceptional success in the digital space</h1>
 
 
+          </div>
+     
 
       </header>
       <main>
 
-        <section className="py-48 relative ">
-          <img src="../../flow1.png" alt="rose" className="absolute h-auto w-2/12 object-cover -z-10 acordion-right-follower" />
+        <section className=" relative pt-24">
+          <h2 className="text-white text-center  text-4xl font-semibold uppercase">services</h2>
+           
 
           <div className="flex items-center justify-center">
             <AccordionDemo />
           </div>
-          <img src="../../flow3.png" alt="rose" className="absolute h-auto w-2/12 object-cover -z-10 acordion-left-follower" />
+         
         </section>
 
 
         <section className="contact-section relative" id="contact-section">
-          <img src="../../flow1.png" alt="rose" className="absolute h-auto w-2/12 object-cover -z-10 contact-right-follower" />
+         
           <div className="contact-title">
             <h1 className="contact-heading">
-              <span className="contact text-4xl font-semibold">CONTACT</span>
+              <h2 className="contact text-4xl font-semibold uppercase ">Reach new heights</h2>
 
 
             </h1>
@@ -77,27 +83,27 @@ export default function Home() {
             </div>
             <input type="button" value="Send" />
           </form>
-          <img src="../../flow3.png" alt="rose" className="absolute h-auto w-2/12 object-cover -z-10 contact-left-follower" />
+          
 
         </section>
 
       </main>
-     
+
       <footer className=" px-48  text-center pt-24 pb-6 relative">
-        <img src="../../flow3.png" alt="rose" className="absolute h-auto w-2/12 object-cover -z-10 footer-left-follower" />
+    
         <div className="flex justify-between gap-28">
           <div className="flex flex-col">
             <h2 className="text-white text-4xl font-semibold text-nowrap">PIXIE MGMT</h2>
             <p className="text-white xl:text-2xl text-[1.2rem]">Copyright © 2024 Pixie MGMT</p>
           </div>
           <div className="flex flex-col">
-          <h5 className="text-rose-100 text-3xl  font-semibold mb-4 text-nowrap">Follow On</h5>
+            <h5 className="text-rose-100 text-3xl  font-semibold mb-4 text-nowrap">Follow On</h5>
             <a className="text-rose-100 text-2xl" href="">Instagram</a>
             <a className="text-rose-100 text-2xl my-3" href="">Twitter</a>
             <a className="text-rose-100 text-2xl" href="mailto:">Email</a>
           </div>
         </div>
-        <img src="../../flow1.png" alt="rose" className="absolute h-auto w-2/12 object-cover -z-10 footer-right-follower" />
+      
       </footer>
 
     </>
