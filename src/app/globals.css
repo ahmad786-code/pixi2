@@ -61,7 +61,7 @@ ul {
 .header {
   padding: 1rem 3rem;
   height: 100vh;
- 
+ background-color: rgba(227, 82, 111, 0.274);
   position: relative;
   overflow: hidden;
 }
@@ -258,10 +258,51 @@ input::placeholder {
     padding-right: 3rem !important /* 192px */;
   }
    
-  .blob-header-right {
-    top: 5rem;
-    left: 12rem;
+  .header-left-blob {
+     
+    width: 250px;
+    position: absolute;
+    top: 18rem;
+    left: 25rem;
+    animation: rotateStar 20s linear infinite;
+     
+  }
+  .header-right-blob {
+    width:  80px;
+    position: absolute;
+    top: 45rem;
+    left: -2rem;
+    animation: rotateStar1 20s linear infinite;
+  }
+
+  @keyframes rotateStar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotateStar1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+   .blob-service-right {
+    bottom:  -0rem;
+    right:   0rem;
+     
    }
+
+   .blob-footer-left {
+    bottom: 18rem;
+    left: 30rem;
+   }
+   
 }
 
 /* Media Queries */

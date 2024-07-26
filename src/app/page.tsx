@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <header className="header relative z-50">
+      <header className="header relative  ">
 
         <nav className="navbar">
           <div className="img-logo ">
@@ -26,29 +26,33 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="text-box z-50">
+        <div className="text-box  ">
           <h1 className="text-6xl text-white">Pixie MGMT</h1>
 
         </div>
-      
+        <img src="../../star-removebg-preview.png" alt="blov" className="header-left-blob  -z-10"  /> 
+        
       </header>
-      <img src="../../blob3.png" alt="gfgfg" className="w-[1000px] absolute top-20 left-48 -z-20 blob-header-right" />
+      {/* <img src="../../blob.svg" alt="gfgfg" className="w-[1000px] absolute top-20 left-48 -z-20 blob-header-right" /> */}
       <main>
-      <div className=" -mt-[40rem]  flex  flex-col items-center justify-center  ">
-          <span className="text-white mb-12 text-6xl">01</span>
-          <h1 className="text-white my-4 text-3xl text-center">Top-tier management agency elevating digital content creators</h1>
-          <span className="text-white  my-12 text-6xl">02</span>
-          <h1 className="text-white my-4 text-3xl text-center">Tailored strategies and expert support to enhance visibility, engagement, and earnings</h1>
-          <span className="text-white  my-12 text-6xl ">03</span>
-          <h1 className="text-white my-4 mb-16 text-3xl text-center">Transforming creativity into exceptional success in the digital space</h1>
+        <section className="relative">
+          <div className=" -mt-[40rem]  flex  flex-col items-center justify-center  ">
+            <span className="text-white mb-12 text-6xl">01</span>
+            <h1 className="text-white my-4 text-3xl text-center">Top-tier management agency elevating digital content creators</h1>
+            <span className="text-white  my-12 text-6xl">02</span>
+            <h1 className="text-white my-4 text-3xl text-center">Tailored strategies and expert support to enhance visibility, engagement, and earnings</h1>
+            <span className="text-white  my-12 text-6xl ">03</span>
+            <h1 className="text-white my-4 mb-16 text-3xl text-center">Transforming creativity into exceptional success in the digital space</h1>
 
-          <a href="#contact-section" className="social-btn  mb-8">Contact Us</a>
-          <div className="sparkle"></div>
-        </div>
+            <a href="#contact-section" className="social-btn  mb-8">Contact Us</a>
+            <div className="sparkle"></div>
+          </div>
+          <img src="../../3dstar.png" alt="blov" className="header-right-blob"  /> 
+        </section>
 
         <section className=" relative pt-24 pb-48">
           <h2 className="text-white text-center  text-4xl font-semibold uppercase">services</h2>
-          <img src="../../blob3.png" alt="gfgfg" className="w-[1000px] absolute top-20 left-48 -z-20 blob-header-right" />
+        
 
           <div className="flex items-center justify-center">
             <AccordionDemo />
@@ -58,7 +62,7 @@ export default function Home() {
 
 
         <section className="pt-48 contact-section relative" id="contact-section">
-        <img src="../../blob-haikei.png" alt="gfgfg" className="w-[1000px] absolute top-20 left-48 -z-20 blob-header-right" />
+         
           <div className="contact-title">
 
             <h2 className="contact text-white text-4xl font-semibold uppercase ">Reach new heights</h2>
@@ -93,8 +97,10 @@ export default function Home() {
 
       </main>
 
-      <footer className=" px-48  text-center pt-24 pb-6 relative">
-      <img src="../../blob-haikei.png" alt="gfgfg" className="w-[1000px] absolute top-0 left-48 -z-20 blob-footer-right" />
+
+      <footer className=" px-48   text-center pt-24 pb-6    ">
+     
+
         <div className="flex justify-between gap-28">
           <div className="flex flex-col">
             <h2 className="text-white text-4xl font-semibold text-nowrap">PIXIE MGMT</h2>
@@ -107,7 +113,7 @@ export default function Home() {
             <a className="text-rose-100 text-2xl" href="mailto:">Email</a>
           </div>
         </div>
-
+     
       </footer>
 
     </>
