@@ -24,7 +24,7 @@ export default function Home() {
           <h1 className="heading">
 
             <span className="heading-1">Pixie MGMT</span>
-            <span className="block uppercase mt-6 text-xl ">PIXIE is a top-tier management agency that elevates digital content creators to their highest potential. We provide tailored strategies and expert support to enhance visibility, engagement, and earnings. At PIXIE, we turn creativity into exceptional success in the digital space.</span>
+            <span className="block uppercase mt-6 text-xl text-wrap px-4">PIXIE is a top-tier management agency that elevates digital content creators to their highest potential. We provide tailored strategies and expert support to enhance visibility, engagement, and earnings. At PIXIE, we turn creativity into exceptional success in the digital space.</span>
           </h1>
           <a href="#contact-section" className="social-btn">Contact Us</a>
           <img src="../../flow3.png" alt="rose" className="absolute h-auto w-3/12 object-cover -z-10 header-left-follower" />
@@ -91,7 +91,7 @@ export default function Home() {
             <p className="text-white xl:text-2xl text-[1.2rem]">Copyright © 2024 Pixie MGMT</p>
           </div>
           <div className="flex flex-col">
-          <h5 className="text-rose-100 text-3xl  font-semibold mb-4">Follow On</h5>
+          <h5 className="text-rose-100 text-3xl  font-semibold mb-4 text-nowrap">Follow On</h5>
             <a className="text-rose-100 text-2xl" href="">Instagram</a>
             <a className="text-rose-100 text-2xl my-3" href="">Twitter</a>
             <a className="text-rose-100 text-2xl" href="mailto:">Email</a>

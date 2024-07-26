@@ -33,7 +33,8 @@ body {
   background-image: url(../../public/waves.png);
   background-color: var(--dark-pink-body);
   background-size: cover;
-
+  
+ 
   overflow-x: hidden;
 
 }
@@ -60,7 +61,7 @@ ul {
 .header {
   padding: 1rem 3rem;
   height: 90vh;
-
+ 
   position: relative;
   overflow: hidden;
 }
@@ -111,6 +112,7 @@ ul {
 }
 
 .text-box {
+
   position: absolute;
   top: 40%;
   left: 50%;
@@ -262,6 +264,8 @@ input::placeholder {
 }
 
 @media screen and (max-width: 600px) {
+  .text-box { width: 100%;
+  }
   footer {
     padding-left: 3rem !important /* 192px */;
     padding-right: 3rem !important /* 192px */;
