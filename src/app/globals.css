@@ -73,7 +73,9 @@ ul {
   align-items: center;
 }
 
-
+.menu {
+  display: none;
+}
 .logo-img {
   width: auto;
   height: 50px;
@@ -222,87 +224,44 @@ input::placeholder {
 
 
 /* BG */
-.header-right-follower {
-  right: -9rem;
-}
-
-.header-left-follower {
-  top: 10rem;
-}
-
-.acordion-right-follower {
-  right: -9rem;
-  top: -5rem;
-
-}
-
-.acordion-left-follower {
-  width: 10%;
-}
-
-.contact-right-follower {
-  right: -9rem;
-  top: -5rem;
-
-}
-
-.contact-left-follower {
-  width: 10%;
-  bottom: 1rem;
-}
-
-.footer-left-follower {
-  width: 10%;
-  left: 28rem;
-  top: 0;
-
-}
-
-.footer-right-follower {
-  right: -9rem;
-  top: -5rem;
-}
+ .blob-header-right {
+  top: -20rem;
+  left: 60rem;
+ }
 
 @media screen and (max-width: 600px) {
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; /* Adds padding on both ends of the navbar */
+  }
+  
+  .img-logo {
+    flex: 1; /* Allows the logo to take up space, pushing the menu to the right */
+    display: flex;
+    justify-content: center; /* Centers the logo inside the img-logo div */
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end; /* Aligns the menu icon to the right */
+  }
+  .links {
+    display: none;
+  }
   .text-box { width: 100%;
   }
   footer {
     padding-left: 3rem !important /* 192px */;
     padding-right: 3rem !important /* 192px */;
   }
-  .header-right-follower {
-    right: -2rem;
-  }
-
-  .header-left-follower {
-    top: 26rem;
-  }
-
-  .acordion-right-follower {
-    right: 0;
+   
+  .blob-header-right {
     top: 5rem;
-
-  }
-
-  .contact-right-follower {
-    right: 0;
-    top: 5rem;
-
-  }
-
-
-  .footer-left-follower {
-    width: 10%;
-    left: 0;
-    top: 12rem;
-
-  }
-
-  .footer-right-follower {
-    right: 0rem;
-    top: 0rem;
-  }
-
+    left: 12rem;
+   }
 }
 
 /* Media Queries */
@@ -365,10 +324,7 @@ input::placeholder {
   }
 }
 
-
-
-
-
+ 
 /* ::-webkit-scrollbar {
  display: none;
 }
@@ -378,3 +334,43 @@ input::placeholder {
 ::-webkit-scrollbar-thumb {
   display: none;
 } */
+
+.sparkle {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  position: relative;
+  animation: sparkle-animation 1s infinite ease-in-out;
+}
+
+.sparkle::before, .sparkle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff !important; /* Pure white for a bright star-like effect */
+  transform-origin: center;
+}
+
+.sparkle::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 3px;
+}
+
+.sparkle::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-radius: 3px;
+}
+
+@keyframes sparkle-animation {
+  0%, 100% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); /* Soft white glow */
+    opacity: 0;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.75); /* Brighter white glow */
+    opacity: 1;
+  }
+}
