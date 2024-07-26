@@ -27,15 +27,15 @@ export default function Home() {
         </nav>
 
         <div className="text-box  ">
-          <h1 className="text-6xl text-white">Pixie MGMT</h1>
+          <h1 className="text-6xl text-white heading-one">Pixie MGMT</h1>
 
         </div>
-        <img src="../../star-removebg-preview.png" alt="blov" className="header-left-blob  -z-10"  /> 
-        
+        <img src="../../star-removebg-preview.png" alt="blov" className="header-left-blob  -z-10" />
+
       </header>
-      {/* <img src="../../blob.svg" alt="gfgfg" className="w-[1000px] absolute top-20 left-48 -z-20 blob-header-right" /> */}
+
       <main>
-        <section className="relative">
+        <section className="relative about ">
           <div className=" -mt-[40rem]  flex  flex-col items-center justify-center  ">
             <span className="text-white mb-12 text-6xl">01</span>
             <h1 className="text-white my-4 text-3xl text-center">Top-tier management agency elevating digital content creators</h1>
@@ -45,24 +45,29 @@ export default function Home() {
             <h1 className="text-white my-4 mb-16 text-3xl text-center">Transforming creativity into exceptional success in the digital space</h1>
 
             <a href="#contact-section" className="social-btn  mb-8">Contact Us</a>
-            <div className="sparkle"></div>
+        
           </div>
-          <img src="../../3dstar.png" alt="blov" className="header-right-blob"  /> 
+
+          <img src="../../3dstar.png" alt="blov" className="header-right-blob" />
         </section>
 
         <section className=" relative pt-24 pb-48">
           <h2 className="text-white text-center  text-4xl font-semibold uppercase">services</h2>
-        
+
 
           <div className="flex items-center justify-center">
             <AccordionDemo />
           </div>
+          <div className="flex flex-col items-center justify-center relative mt-36">
+              <div className="sparkle "></div>
+              <div className="border-[1px] border-solid border-white w-[36rem] absolute"></div>
 
+            </div>
         </section>
 
 
         <section className="pt-48 contact-section relative" id="contact-section">
-         
+
           <div className="contact-title">
 
             <h2 className="contact text-white text-4xl font-semibold uppercase ">Reach new heights</h2>
@@ -99,7 +104,7 @@ export default function Home() {
 
 
       <footer className=" px-48   text-center pt-24 pb-6    ">
-     
+
 
         <div className="flex justify-between gap-28">
           <div className="flex flex-col">
@@ -113,7 +118,7 @@ export default function Home() {
             <a className="text-rose-100 text-2xl" href="mailto:">Email</a>
           </div>
         </div>
-     
+
       </footer>
 
     </>
